@@ -12,7 +12,7 @@ var server = http.createServer(function(req,res){
    //客户端输入的url，例如如果输入localhost:8888/index.html，那么这里的url == /index.html 
    //url.parse()方法将一个URL字符串转换成对象并返回，通过pathname来访问此url的地址。
  
-  var realPath = path.join('Z:/1. Fish Creek(original)/',pathname);
+  var realPath = path.join('Z:/OtherLabs/Web&UILab/Lab1. Fish Creek(original)/',pathname);
   //完整的url路径
   console.log(realPath); 
   // F:/nodejs/nodetest/index.html
@@ -30,6 +30,12 @@ var server = http.createServer(function(req,res){
         'content-type':'text/plain'
       });
       res.write('404,page not found');
+      res.end();
+    }else if (/\.(css)$/.test(pathname)){
+      //res css files
+      console.log('css')
+      res.writeHead(200, {'Content-Type': 'text/css'});
+      res.write(data);
       res.end();
     }else{
       //成功读取文件
