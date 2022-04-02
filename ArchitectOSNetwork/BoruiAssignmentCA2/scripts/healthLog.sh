@@ -1,0 +1,1 @@
+top -n 1 >> config/top.log

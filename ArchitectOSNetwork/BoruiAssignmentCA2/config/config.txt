@@ -1,0 +1,4 @@
+groupname:adm
+intranet:/var/www/html/intranet
+live:/var/www/html/live
+backup:/home/backups

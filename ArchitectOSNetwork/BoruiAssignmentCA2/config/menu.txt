@@ -1,0 +1,11 @@
+----------------------------
+  --  Website Manager  --   
+----------------------------
+1. List Users
+2. Add user to web group
+3. Backup Intranet Directory
+4. Backup Live Directory
+5. Transfer Upates to Website
+6. Audit Reports
+7. System Health Reports
+q. Quit
